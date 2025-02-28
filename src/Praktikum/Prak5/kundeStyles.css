@@ -1,0 +1,115 @@
+/*if code edited but no change visible, do ctrl + shift + R in the webpage*/
+.orders-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px; 
+} 
+
+.order-box{
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #9B7874;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1C1F33;
+}
+
+.orders-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('img/kundeHeader.png');
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.status-box{
+    border: 2px solid rgb(179, 130, 34);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #9B7874;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.radio-buttons{
+    display: flex;
+    gap: 8px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.radio-label {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex; /* Inline-flex for aligning items inside label */
+    align-items: center; /* Vertically align radio button and text */
+    gap: 5px; /* space between the radio input and text */
+}
+
+.radio-label:has(input:checked){
+    animation: oscillateStatusColor 1.0s ease-in-out infinite;
+    border-color: lightseagreen;
+}
+
+@keyframes oscillateStatusColor{
+    0%{
+        background-color: rgb(27, 155, 112);
+    }
+    25%{
+        background-color:rgb(77, 205, 162);
+    }
+    50%{
+        background-color: rgb(127, 255, 212);
+    }
+    75%{
+        background-color:rgb(77, 205, 162);
+    }
+    100%{
+        background-color: rgb(27, 155, 112);
+    }
+}
+
+.no-orders-container{
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #9B7874;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #1C1F33;
+    font-size: 200%;
+}
+
+/*text stuff*/
+h2{
+    text-align: center;
+    color:#ffffff;
+    font-size: 60px;
+    -webkit-text-stroke: 1px rgb(157, 35, 35);
+}
+
+h3{
+    text-align: center;
+    font-size: 150%;
+    color: white;
+}
+
+h4{
+    text-align: center;
+    color: white;
+}
+
+p{
+    text-align: center;
+    color: white;
+}

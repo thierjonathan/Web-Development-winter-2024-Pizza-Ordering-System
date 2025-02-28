@@ -1,0 +1,104 @@
+.title{
+    text-align: center;
+}
+.bestellung-id{
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #a6a1a1;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.box {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.bestellung-box {
+    text-align: center;
+}
+
+.pizza-box {
+    text-align: center;
+}
+
+.status-box {
+    text-align: center;
+}
+input[type="radio"] {
+    display: none;
+}
+label[for^="unterwegsButton"] {
+    background-color: #4caf50;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+label[for^="geliefertButton"] {
+    background-color: #f32121; 
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+label[for^="unterwegsButton"]:hover {
+    background-color: #45a049;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+label[for^="geliefertButton"]:hover {
+    background-color: #f32121;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.dashed {
+    border-top: 2px solid rgb(71, 68, 68);
+    margin: 10px 0;
+    padding: 0 10px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;   
+}
+input[type="radio"]:checked + label {
+    border: 2px solid #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}

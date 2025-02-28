@@ -1,0 +1,83 @@
+<?php
+header('Content-Type: text/html; charset=utf-8');
+echo <<< HTML
+<!DOCTYPE html>
+<html lang="de">  
+<head>
+    <meta charset="UTF-8" />
+    <!-- für später: CSS include -->
+    <!-- <link rel="stylesheet" href="XXX.css"/> -->
+    <!-- für später: JavaScript include -->
+    <!-- <script src="XXX.js"></script> -->
+    <title>Kunde</title>
+</head>
+<body>
+HTML;
+echo <<< HTML
+<body>
+    <h2>Ihre Bestellung</h2>
+    <form method="get" action="https://echo.fbi.h-da.de/">
+        
+        <!-- Margherita Section -->
+        <section>
+            <h3>Margherita</h3>
+            <p>Status: bestellt</p>
+            <label>
+                <input type="radio" name="margherita_status" value="bestellt" checked disabled>
+                Bestellt
+                <input type="radio" name="margherita_status" value="im Ofen" disabled>
+                Im Ofen
+                <input type="radio" name="margherita_status" value="fertig" disabled>
+                Fertig
+                <input type="radio" name="margherita_status" value="unterwegs" disabled>
+                Unterwegs
+                <input type="radio" name="margherita_status" value="geliefert" disabled>
+                Geliefert
+            </label>
+        </section>
+        
+        <!-- Salami Section -->
+        <section>
+            <h3>Salami</h3>
+            <p>Status: im Ofen</p>
+            <label>
+                <input type="radio" name="salami_status" value="bestellt" disabled>
+                Bestellt
+                <input type="radio" name="salami_status" value="im Ofen" checked disabled>
+                Im Ofen
+                <input type="radio" name="salami_status" value="fertig" disabled>
+                Fertig
+                <input type="radio" name="salami_status" value="unterwegs" disabled>
+                Unterwegs
+                <input type="radio" name="salami_status" value="geliefert" disabled>
+                Geliefert
+            </label>
+        </section>
+        
+        <!-- Hawaii Section -->
+        <section>
+            <h3>Hawaii</h3>
+            <p>Status: fertig</p>
+            <label>
+                <input type="radio" name="hawaii_status" value="bestellt" disabled>
+                Bestellt
+                <input type="radio" name="hawaii_status" value="im Ofen" disabled>
+                Im Ofen
+                <input type="radio" name="hawaii_status" value="fertig" checked disabled>
+                Fertig
+                <input type="radio" name="hawaii_status" value="unterwegs" disabled>
+                Unterwegs
+                <input type="radio" name="hawaii_status" value="geliefert" disabled>
+                Geliefert
+            </label>
+        </section>
+    </form>
+</body>
+HTML;
+
+echo <<< HTML
+</body>
+</html>
+HTML;
+
+

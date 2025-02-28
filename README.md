@@ -1,3 +1,5 @@
+# Pizza-Ordering-System
+This website was developed as part of the Web development module by Bryan Austin Suharta, Thierry J.J. Ong and Ryan X.F.Zebua. the website offers a wide range of services. it allows customers to place orders, track their order status, and receive deliveries. Backers can view the list of pizzas to prepare, while drivers manage deliveries efficiently.
 # EWA Docker Setup
 You know about [Docker](https://www.docker.com) and Docker is running on your system? You do not want to mess up your system by installing a web server and all the fancy software you need for EWA?
 
